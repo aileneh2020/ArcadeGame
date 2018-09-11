@@ -14,7 +14,7 @@ This is a simple browser-based version of the classic arcade game 'Frogger'.
 
 This arcade game is created utilizing HTML, CSS and JavaScript (ES6). As of August 2017, the following browsers support ES6: Chrome, Firefox, Edge, Safari and Opera. If there are any issues while utilizing other browsers, including Internet Explorer, you may utilize a compiler, such as Babel (https://babeljs.io/), to get ES6 to work with your browser.
 
-To run the game, go to (github url). The game should start once the page is rendered.
+To run the game, go to https://aileneh2020.github.io/ArcadeGame/. The game should start automatically once the page is rendered.
 
 
 ## HOW TO PLAY
