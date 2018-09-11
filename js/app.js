@@ -1,6 +1,6 @@
 // Enemies the player must avoid
 class Enemy {
-    constructor(x,y, bugSpeed) {
+    constructor(x, y, bugSpeed) {
         this.x = x;
         this.y = y;
         this.sprite = 'images/enemy-bug.png';
@@ -77,7 +77,7 @@ class Player1 {
 
         for (let enemy of allEnemies) {
             if (withinRange(enemy.x, this.x * 101 - perimeter, this.x * 101 + perimeter) &&
-            withinRange(enemy.y, this.y, this.y)) {
+                withinRange(enemy.y, this.y, this.y)) {
                 //console.log(allEnemies.indexOf(enemy), enemy.x, enemy.y, `player ${this.x}, ${this.y}`);
                 this.resetPosition();
             }
@@ -92,7 +92,7 @@ class Player1 {
 
     // Once the player reaches the water the game is won
     checkWin() {
-        if(this.y === 0) {
+        if (this.y === 0) {
             this.win = true;
             openModal();
         }
@@ -115,9 +115,9 @@ function withinRange(x, min, max) {
 
 // Instantiate objects to create player and enemies
 const player = new Player1;
-const enemy1 = new Enemy(0,1,2);
-const enemy2 = new Enemy(0,2,3);
-const enemy3 = new Enemy(0,3,1);
+const enemy1 = new Enemy(0, 1, 2);
+const enemy2 = new Enemy(0, 2, 3);
+const enemy3 = new Enemy(0, 3, 1);
 
 // Create an array and push all created enemies into the array
 const allEnemies = [];
@@ -125,7 +125,7 @@ allEnemies.push(enemy1, enemy2, enemy3);
 
 
 // Listens for key presses and sends the key to Player.handleInput() method.
-document.addEventListener('keyup', function(e) {
+document.addEventListener('keyup', function (e) {
     var allowedKeys = {
         37: 'left',
         38: 'up',
