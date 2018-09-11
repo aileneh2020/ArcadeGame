@@ -5,8 +5,8 @@ This is a simple browser-based version of the classic arcade game 'Frogger'.
 
 
 ## TABLE OF CONTENTS
-* [Set Up and Running the Game](#setupandrun)
-* [How to Play](#howtoplay)
+* [Set Up and Running the Game](#set-up-and-running-the-game)
+* [How to Play](#how-to-play)
 * [Resources](#resources)
 
 
