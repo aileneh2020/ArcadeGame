@@ -12,9 +12,13 @@ This is a simple browser-based version of the classic arcade game 'Frogger'.
 
 ## SET UP AND RUNNING THE GAME
 
+The files can be downloaded at https://github.com/aileneh2020/ArcadeGame.git. Once downloaded or cloned to your local machine, open the files in your code editor. Copy the link for the index.html file and load it onto your browser.
+
 This arcade game is created utilizing HTML, CSS and JavaScript (ES6). As of August 2017, the following browsers support ES6: Chrome, Firefox, Edge, Safari and Opera. If there are any issues while utilizing other browsers, including Internet Explorer, you may utilize a compiler, such as Babel (https://babeljs.io/), to get ES6 to work with your browser.
 
-To run the game, go to https://aileneh2020.github.io/ArcadeGame/. The game should start automatically once the page is rendered.
+The HTML file is very minimal as it only contains links to the CSS and JS files, along with some code for the modal. The CSS file is mostly styling for the modal. The resources.js file is simply an image loading utility and engine.js provides game loop functionality. The app.js file contains the game characters that are created utilizing ES6 classes and character movement. There is also an images folder containing all the images used for the gameboard and characters.
+
+Game is hosted online at https://aileneh2020.github.io/ArcadeGame/.
 
 
 ## HOW TO PLAY
