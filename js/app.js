@@ -1,3 +1,5 @@
+"use strict";
+
 // Enemies the player must avoid
 class Enemy {
     constructor(x, y, bugSpeed) {
@@ -73,12 +75,14 @@ class Player1 {
 
     // Checks to see if player collides with enemy bug
     checkCollisions() {
-        const perimeter = 20;
+        const perimeter = 83;
 
         for (let enemy of allEnemies) {
             if (withinRange(enemy.x, this.x * 101 - perimeter, this.x * 101 + perimeter) &&
                 withinRange(enemy.y, this.y, this.y)) {
-                //console.log(allEnemies.indexOf(enemy), enemy.x, enemy.y, `player ${this.x}, ${this.y}`);
+                //code to help debug point of collision
+                //this.win = true;
+                //console.log(allEnemies.indexOf(enemy), enemy.x, enemy.y, `player ${this.x*101-perimeter}, ${this.y}`);
                 this.resetPosition();
             }
         }
