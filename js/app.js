@@ -146,7 +146,7 @@ function openModal() {
     const modal = document.getElementById('win-modal');
     const content = document.querySelector('.text-content');
 
-    text = ("Congratulations!<br>You have safely arrived at the river.");
+    const text = ("Congratulations!<br>You have safely arrived at the river.");
     content.innerHTML = text;
 
     modal.style.display = "block";
